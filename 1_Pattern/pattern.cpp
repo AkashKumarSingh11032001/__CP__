@@ -185,6 +185,41 @@ void pattern_9(int n) // n = no. of row
         cout << endl;
     }
 }
+/* PATTERN 10 ---> IMP
+ABC
+BCD
+CDE
+*/
+void pattern_10(int n) // n = no. of row
+{
+    for (int i = 1; i <= n; i++)
+    {
+        char x = 'A'+i-1;
+        for (int j = 1; j <= n; j++)
+        {
+            char ch = x+j-1;
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
+/* PATTERN 11
+A
+BB
+CCC
+*/
+void pattern_11(int n) // n = no. of row
+{
+    for (int i = 1; i <= n; i++)
+    {
+        char x = 'A'+i-1;
+        for (int j = 1; j <= i; j++)
+        {
+            cout << x << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -229,5 +264,15 @@ int main()
     cout << endl;
 
     // pattern 9
-    pattern_9(4);
+    // pattern_9(4);
+                        
+    cout << endl;
+
+    // pattern 10
+    // pattern_10(4);
+                            
+    cout << endl;
+
+    // pattern 11
+    pattern_11(4);
 }
