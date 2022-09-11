@@ -38,18 +38,19 @@ void pattern_2(int n) // n = no. of row
 }
 
 /* PATTERN 3
-*
-**
-***
-****
-*/
+ *
+ **
+ ***
+ ****
+ */
 void pattern_3(int n) // n = no. of row
 {
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= i; j++)
         {
-            cout << "*" << " ";
+            cout << "*"
+                 << " ";
         }
         cout << endl;
     }
@@ -145,7 +146,7 @@ void pattern_7(int n) // n = no. of row
     {
         for (int j = 1; j <= n; j++)
         {
-            char ch = 'A'+i-1;
+            char ch = 'A' + i - 1;
             cout << ch << " ";
         }
         cout << endl;
@@ -162,7 +163,7 @@ void pattern_8(int n) // n = no. of row
     {
         for (int j = 1; j <= n; j++)
         {
-            char ch = 'A'+j-1;
+            char ch = 'A' + j - 1;
             cout << ch << " ";
         }
         cout << endl;
@@ -194,10 +195,10 @@ void pattern_10(int n) // n = no. of row
 {
     for (int i = 1; i <= n; i++)
     {
-        char x = 'A'+i-1;
+        char x = 'A' + i - 1;
         for (int j = 1; j <= n; j++)
         {
-            char ch = x+j-1;
+            char ch = x + j - 1;
             cout << ch << " ";
         }
         cout << endl;
@@ -212,7 +213,7 @@ void pattern_11(int n) // n = no. of row
 {
     for (int i = 1; i <= n; i++)
     {
-        char x = 'A'+i-1;
+        char x = 'A' + i - 1;
         for (int j = 1; j <= i; j++)
         {
             cout << x << " ";
@@ -245,13 +246,13 @@ DEFG
 */
 void pattern_13(int n) // n = no. of row
 {
-    
+
     for (int i = 1; i <= n; i++)
     {
-        char x = 'A'+i-1;
+        char x = 'A' + i - 1;
         for (int j = 1; j <= i; j++)
         {
-            char ch = x + j -1;
+            char ch = x + j - 1;
             cout << ch << " ";
         }
         cout << endl;
@@ -265,14 +266,36 @@ ABCD
 */
 void pattern_14(int n) // n = no. of row
 {
-    
+
     for (int i = 1; i <= n; i++)
     {
-        char x = 'A'+n-1;
+        char x = 'A' + n - 1;
         for (int j = i; j > 0; j--)
         {
             char ch = x - j + 1;
             cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
+/* PATTERN 15
+  *
+ **
+***
+*/
+void pattern_15(int n) // n = no. of row
+{
+
+    for (int i = 0; i < n; i++)
+    {
+        int space = n - i;
+        for (int j = 1; j <= space; j++) // print space
+        {
+            cout << " " << " ";
+        }
+        for (int j = space; j <= n; j++) // print star
+        {
+            cout << "*" << " ";
         }
         cout << endl;
     }
@@ -297,54 +320,59 @@ int main()
 
     // pattern 4
     // pattern_4(4);
-    
+
     cout << endl;
 
     // pattern 5
     // pattern_5(4);
-        
+
     cout << endl;
 
     // pattern 6
     // pattern_6(4);
-            
+
     cout << endl;
 
     // pattern 7
     // pattern_7(4);
-                
+
     cout << endl;
 
     // pattern 8
     // pattern_8(4);
-                    
+
     cout << endl;
 
     // pattern 9
     // pattern_9(4);
-                        
+
     cout << endl;
 
     // pattern 10
     // pattern_10(4);
-                            
+
     cout << endl;
 
     // pattern 11
     // pattern_11(4);
-                                
+
     cout << endl;
 
     // pattern 12
     // pattern_12(4);
-                                    
+
     cout << endl;
 
     // pattern 13
     // pattern_13(4);
-                                        
+
     cout << endl;
 
     // pattern 14
-    pattern_14(4);
+    // pattern_14(4);
+
+    cout << endl;
+
+    // pattern 15
+    pattern_15(4);
 }
