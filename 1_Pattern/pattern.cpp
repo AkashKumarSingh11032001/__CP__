@@ -279,10 +279,10 @@ void pattern_14(int n) // n = no. of row
     }
 }
 /* PATTERN 15
-  *
+ *
  **
-***
-*/
+ ***
+ */
 void pattern_15(int n) // n = no. of row
 {
 
@@ -291,11 +291,13 @@ void pattern_15(int n) // n = no. of row
         int space = n - i;
         for (int j = 1; j <= space; j++) // print space
         {
-            cout << " " << " ";
+            cout << " "
+                 << " ";
         }
         for (int j = space; j <= n; j++) // print star
         {
-            cout << "*" << " ";
+            cout << "*"
+                 << " ";
         }
         cout << endl;
     }
@@ -314,7 +316,7 @@ void pattern_15(int n) // n = no. of row
 //         for (int j = 1; j <= x; j++) // print space
 //         {
 //             cout << "*" << " ";
-           
+
 //         }
 //         x--;
 //         cout << endl;
@@ -324,32 +326,34 @@ void pattern_16(int n) // n = no. of row
 {
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n-i+1 ; j++) // print space
+        for (int j = 1; j <= n - i + 1; j++) // print space
         {
-            cout << "*" << " ";
-           
+            cout << "*"
+                 << " ";
         }
         cout << endl;
     }
 }
 /* PATTERN 17
 ****
- ***
-  **
-   *
+***
+**
+*
 */
 void pattern_17(int n) // n = no. of row
 {
     for (int i = 0; i < n; i++)
     {
         int space = i;
-        for(int k = 1; k <= space; k++){
-            cout << " " << " ";
-        }
-        for (int j = space+1; j <= n; j++) // print space
+        for (int k = 1; k <= space; k++)
         {
-            cout << "*" << " ";
-           
+            cout << " "
+                 << " ";
+        }
+        for (int j = space + 1; j <= n; j++) // print space
+        {
+            cout << "*"
+                 << " ";
         }
         cout << endl;
     }
@@ -364,14 +368,15 @@ void pattern_18(int n) // n = no. of row
 {
     for (int i = 1; i <= n; i++)
     {
-        int space = i-1;
-        for(int k = 1; k <= space; k++){
-            cout << " " << " ";
+        int space = i - 1;
+        for (int k = 1; k <= space; k++)
+        {
+            cout << " "
+                 << " ";
         }
-        for (int j = space+1; j <= n; j++) // print space
+        for (int j = space + 1; j <= n; j++) // print space
         {
             cout << i << " ";
-           
         }
         cout << endl;
     }
@@ -386,14 +391,15 @@ void pattern_19(int n) // n = no. of row
 {
     for (int i = 1; i <= n; i++)
     {
-        int space = n-i;
-        for(int k = 1; k <= space; k++){
-            cout << " " << " ";
+        int space = n - i;
+        for (int k = 1; k <= space; k++)
+        {
+            cout << " "
+                 << " ";
         }
-        for (int j = space+1; j <= n; j++) // print space
+        for (int j = space + 1; j <= n; j++) // print space
         {
             cout << i << " ";
-           
         }
         cout << endl;
     }
@@ -408,14 +414,15 @@ void pattern_20(int n) // n = no. of row
 {
     for (int i = 1; i <= n; i++)
     {
-        int space = i-1;
-        for(int k = 1; k <= space; k++){
-            cout << " " << " ";
+        int space = i - 1;
+        for (int k = 1; k <= space; k++)
+        {
+            cout << " "
+                 << " ";
         }
-        for (int j = space+1; j <= n; j++) // print space
+        for (int j = space + 1; j <= n; j++) // print space
         {
             cout << j << " ";
-           
         }
         cout << endl;
     }
@@ -430,69 +437,81 @@ void pattern_21(int n) // n = no. of row
     int val = 1;
     for (int i = 1; i <= n; i++)
     {
-        int space = n-i;
-        for(int k = 1; k <= space; k++){
-            cout << " " << " ";
+        int space = n - i;
+        for (int k = 1; k <= space; k++)
+        {
+            cout << " "
+                 << " ";
         }
-        for (int j = space+1; j <= n; j++) // print space
+        for (int j = space + 1; j <= n; j++) // print space
         {
             cout << val++ << " ";
-           
         }
         cout << endl;
     }
 }
 /* PATTERN 22
-   1   
+   1
   121
  12321
 
 */
 void pattern_22(int n) // n = no. of row
 {
-    int col = n*2 - 1;
-    for(int i = 1; i <= n; i++)
+    int col = n * 2 - 1;
+    for (int i = 1; i <= n; i++)
     {
         int space_1 = n - i;
-        for(int j = 1;j <= space_1;j++){
-            cout << " " << " ";
+        for (int j = 1; j <= space_1; j++)
+        {
+            cout << " "
+                 << " ";
         }
         int x = 1;
-        for(int k = space_1+1; k<=n; k++){
+        for (int k = space_1 + 1; k <= n; k++)
+        {
             cout << x++ << " ";
         }
-        for(int l = i - 1; l > 0; l--){
+        for (int l = i - 1; l > 0; l--)
+        {
             cout << l << " ";
         }
-        
+
         cout << endl;
     }
-    
 }
-/* PATTERN 22
+/* PATTERN 22 ---> IMP
 1234554321
 1234**4321
 123****321
 12******21
 1********1
 */
-void pattern_23(int n){
+void pattern_23(int n)
+{
     int r1 = n;
     int r2 = n;
-    for(int i = 1; i<= n; i++){
+    for (int i = 1; i <= n; i++)
+    {
         // 1st square
-        for(int  j = 1; j <= r1; j++){
+        for (int j = 1; j <= r1; j++)
+        {
             cout << j << " ";
         }
         r1--;
-        for(int  j = n-i+1; j < n ; j++){
-            cout << "*" << " ";
+        for (int j = n - i + 1; j < n; j++)
+        {
+            cout << "*"
+                 << " ";
         }
         // 2nd square
-        for(int  j = n-i+1; j < n ; j++){
-            cout << "*" << " ";
+        for (int j = n - i + 1; j < n; j++)
+        {
+            cout << "*"
+                 << " ";
         }
-        for(int  j = r2; j > 0; j--){
+        for (int j = r2; j > 0; j--)
+        {
             cout << j << " ";
         }
         r2--;
@@ -574,42 +593,42 @@ int main()
 
     // pattern 15
     // pattern_15(4);
-    
+
     cout << endl;
 
     // pattern 16
     // pattern_16(4);
-        
+
     cout << endl;
 
     // pattern 17
     // pattern_17(4);
-            
+
     cout << endl;
 
     // pattern 18
     // pattern_18(4);
-                
+
     cout << endl;
 
     // pattern 19
     // pattern_19(4);
-                    
+
     cout << endl;
 
     // pattern 20
     // pattern_20(4);
-                        
+
     cout << endl;
 
     // pattern 21
     // pattern_21(4);
-                            
+
     cout << endl;
 
     // pattern 22
     // pattern_22(3);
-                                
+
     cout << endl;
 
     // pattern 23
