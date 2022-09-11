@@ -92,6 +92,37 @@ void pattern_5(int n) // n = no. of row
         cout << endl;
     }
 }
+// pattern 5 without using extra vrialble!
+// void pattern_5(int n) // n = no. of row
+// {
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = 0; j < i; j++)
+//         {
+//             cout << i+j << " ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+/* PATTERN 6
+1
+21
+321
+4321
+*/
+void pattern_6(int n) // n = no. of row
+{
+    int val = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << val++ << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
