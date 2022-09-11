@@ -151,6 +151,23 @@ void pattern_7(int n) // n = no. of row
         cout << endl;
     }
 }
+/* PATTERN 8
+ABCD
+ABCD
+ABCD
+*/
+void pattern_8(int n) // n = no. of row
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            char ch = 'A'+j-1;
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
