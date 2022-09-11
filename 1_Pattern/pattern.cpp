@@ -113,12 +113,11 @@ void pattern_5(int n) // n = no. of row
 */
 void pattern_6(int n) // n = no. of row
 {
-    int val = 1;
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= i; j++)
+        for (int j = i; j > 0; j--)
         {
-            cout << val++ << " ";
+            cout << j << " ";
         }
         cout << endl;
     }
@@ -147,5 +146,10 @@ int main()
     cout << endl;
 
     // pattern 5
-    pattern_5(4);
+    // pattern_5(4);
+        
+    cout << endl;
+
+    // pattern 6
+    pattern_6(4);
 }
