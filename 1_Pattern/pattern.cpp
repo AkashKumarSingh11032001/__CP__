@@ -354,6 +354,28 @@ void pattern_17(int n) // n = no. of row
         cout << endl;
     }
 }
+/* PATTERN 18
+1111
+ 222
+  33
+   4
+*/
+void pattern_18(int n) // n = no. of row
+{
+    for (int i = 1; i <= n; i++)
+    {
+        int space = i-1;
+        for(int k = 1; k <= space; k++){
+            cout << " " << " ";
+        }
+        for (int j = space+1; j <= n; j++) // print space
+        {
+            cout << i << " ";
+           
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -438,5 +460,10 @@ int main()
     cout << endl;
 
     // pattern 17
-    pattern_17(4);
+    // pattern_17(4);
+            
+    cout << endl;
+
+    // pattern 18
+    pattern_18(4);
 }
