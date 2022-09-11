@@ -257,6 +257,26 @@ void pattern_13(int n) // n = no. of row
         cout << endl;
     }
 }
+/* PATTERN 14
+D
+CD
+BCD
+ABCD
+*/
+void pattern_14(int n) // n = no. of row
+{
+    
+    for (int i = 1; i <= n; i++)
+    {
+        char x = 'A'+n-1;
+        for (int j = i; j > 0; j--)
+        {
+            char ch = x - j + 1;
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -321,5 +341,10 @@ int main()
     cout << endl;
 
     // pattern 13
-    pattern_13(4);
+    // pattern_13(4);
+                                        
+    cout << endl;
+
+    // pattern 14
+    pattern_14(4);
 }
