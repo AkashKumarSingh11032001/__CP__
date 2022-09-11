@@ -442,27 +442,32 @@ void pattern_21(int n) // n = no. of row
         cout << endl;
     }
 }
-/* PATTERN 21
+/* PATTERN 22
    1   
   121
  12321
+
 */
-void pattern_21(int n) // n = no. of row
+void pattern_22(int n) // n = no. of row
 {
-    int val = 1;
-    for (int i = 1; i <= n; i++)
+    int col = n*2 - 1;
+    for(int i = 1; i <= n; i++)
     {
-        int space = n-i;
-        for(int k = 1; k <= space; k++){
+        int space_1 = n - i;
+        for(int j = 1;j <= space_1;j++){
             cout << " " << " ";
         }
-        for (int j = space+1; j <= n; j++) // print space
-        {
-            cout << val++ << " ";
-           
+        int x = 1;
+        for(int k = space_1+1; k<=n; k++){
+            cout << x++ << " ";
         }
+        for(int l = i - 1; l > 0; l--){
+            cout << l << " ";
+        }
+        
         cout << endl;
     }
+    
 }
 int main()
 {
@@ -568,5 +573,10 @@ int main()
     cout << endl;
 
     // pattern 21
-    pattern_21(4);
+    // pattern_21(4);
+                            
+    cout << endl;
+
+    // pattern 22
+    pattern_22(3);
 }
