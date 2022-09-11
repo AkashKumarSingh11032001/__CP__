@@ -376,6 +376,50 @@ void pattern_18(int n) // n = no. of row
         cout << endl;
     }
 }
+/* PATTERN 19
+   1
+  22
+ 333
+4444
+*/
+void pattern_19(int n) // n = no. of row
+{
+    for (int i = 1; i <= n; i++)
+    {
+        int space = n-i;
+        for(int k = 1; k <= space; k++){
+            cout << " " << " ";
+        }
+        for (int j = space+1; j <= n; j++) // print space
+        {
+            cout << i << " ";
+           
+        }
+        cout << endl;
+    }
+}
+/* PATTERN 20
+1234
+ 234
+  34
+   4
+*/
+void pattern_20(int n) // n = no. of row
+{
+    for (int i = 1; i <= n; i++)
+    {
+        int space = i-1;
+        for(int k = 1; k <= space; k++){
+            cout << " " << " ";
+        }
+        for (int j = space+1; j <= n; j++) // print space
+        {
+            cout << j << " ";
+           
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -465,5 +509,15 @@ int main()
     cout << endl;
 
     // pattern 18
-    pattern_18(4);
+    // pattern_18(4);
+                
+    cout << endl;
+
+    // pattern 19
+    // pattern_19(4);
+                    
+    cout << endl;
+
+    // pattern 20
+    pattern_20(4);
 }
