@@ -220,6 +220,23 @@ void pattern_11(int n) // n = no. of row
         cout << endl;
     }
 }
+/* PATTERN 12
+A
+BC
+DEF
+*/
+void pattern_12(int n) // n = no. of row
+{
+    char x = 'A';
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << x++ << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -274,5 +291,10 @@ int main()
     cout << endl;
 
     // pattern 11
-    pattern_11(4);
+    // pattern_11(4);
+                                
+    cout << endl;
+
+    // pattern 12
+    pattern_12(4);
 }
