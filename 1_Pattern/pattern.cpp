@@ -469,6 +469,36 @@ void pattern_22(int n) // n = no. of row
     }
     
 }
+/* PATTERN 22
+1234554321
+1234**4321
+123****321
+12******21
+1********1
+*/
+void pattern_23(int n){
+    int r1 = n;
+    int r2 = n;
+    for(int i = 1; i<= n; i++){
+        // 1st square
+        for(int  j = 1; j <= r1; j++){
+            cout << j << " ";
+        }
+        r1--;
+        for(int  j = n-i+1; j < n ; j++){
+            cout << "*" << " ";
+        }
+        // 2nd square
+        for(int  j = n-i+1; j < n ; j++){
+            cout << "*" << " ";
+        }
+        for(int  j = r2; j > 0; j--){
+            cout << j << " ";
+        }
+        r2--;
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -578,5 +608,10 @@ int main()
     cout << endl;
 
     // pattern 22
-    pattern_22(3);
+    // pattern_22(3);
+                                
+    cout << endl;
+
+    // pattern 23
+    pattern_23(5);
 }
