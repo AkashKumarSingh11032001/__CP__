@@ -300,6 +300,26 @@ void pattern_15(int n) // n = no. of row
         cout << endl;
     }
 }
+/* PATTERN 16
+****
+***
+**
+*
+*/
+void pattern_16(int n) // n = no. of row
+{
+    int x = n;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= x; j++) // print space
+        {
+            cout << "*" << " ";
+           
+        }
+        x--;
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -375,4 +395,9 @@ int main()
 
     // pattern 15
     pattern_15(4);
+    
+    cout << endl;
+
+    // pattern 16
+    pattern_16(4);
 }
