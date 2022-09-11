@@ -324,7 +324,29 @@ void pattern_16(int n) // n = no. of row
 {
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n-i+1; j++) // print space
+        for (int j = 1; j <= n-i+1 ; j++) // print space
+        {
+            cout << "*" << " ";
+           
+        }
+        cout << endl;
+    }
+}
+/* PATTERN 17
+****
+ ***
+  **
+   *
+*/
+void pattern_17(int n) // n = no. of row
+{
+    for (int i = 0; i < n; i++)
+    {
+        int space = i;
+        for(int k = 1; k <= space; k++){
+            cout << " " << " ";
+        }
+        for (int j = space+1; j <= n; j++) // print space
         {
             cout << "*" << " ";
            
@@ -406,10 +428,15 @@ int main()
     cout << endl;
 
     // pattern 15
-    pattern_15(4);
+    // pattern_15(4);
     
     cout << endl;
 
     // pattern 16
-    pattern_16(4);
+    // pattern_16(4);
+        
+    cout << endl;
+
+    // pattern 17
+    pattern_17(4);
 }
