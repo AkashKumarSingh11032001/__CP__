@@ -73,6 +73,25 @@ void pattern_4(int n) // n = no. of row
         cout << endl;
     }
 }
+
+/* PATTERN 5
+1
+23
+456
+78910
+*/
+void pattern_5(int n) // n = no. of row
+{
+    int val = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << val++ << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -92,5 +111,10 @@ int main()
     cout << endl;
 
     // pattern 4
-    pattern_4(4);
+    // pattern_4(4);
+    
+    cout << endl;
+
+    // pattern 5
+    pattern_5(4);
 }
