@@ -122,6 +122,35 @@ void pattern_6(int n) // n = no. of row
         cout << endl;
     }
 }
+// void pattern_6(int n) // n = no. of row
+// {
+//     for (int i = 1; i <= n; i++)
+//     {
+//         for (int j = 1; j <= i; j++)
+//         {
+//             cout << i-j+1 << " ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+/* PATTERN 7
+AAA
+BBB
+CCC
+*/
+void pattern_7(int n) // n = no. of row
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            char ch = 'A'+i-1;
+            cout << ch << " ";
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -151,5 +180,10 @@ int main()
     cout << endl;
 
     // pattern 6
-    pattern_6(4);
+    // pattern_6(4);
+            
+    cout << endl;
+
+    // pattern 7
+    pattern_7(4);
 }
