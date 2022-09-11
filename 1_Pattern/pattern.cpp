@@ -420,6 +420,28 @@ void pattern_20(int n) // n = no. of row
         cout << endl;
     }
 }
+/* PATTERN 21
+   1
+  23
+ 456
+*/
+void pattern_21(int n) // n = no. of row
+{
+    int val = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        int space = n-i;
+        for(int k = 1; k <= space; k++){
+            cout << " " << " ";
+        }
+        for (int j = space+1; j <= n; j++) // print space
+        {
+            cout << val++ << " ";
+           
+        }
+        cout << endl;
+    }
+}
 int main()
 {
 
@@ -519,5 +541,10 @@ int main()
     cout << endl;
 
     // pattern 20
-    pattern_20(4);
+    // pattern_20(4);
+                        
+    cout << endl;
+
+    // pattern 21
+    pattern_21(4);
 }
